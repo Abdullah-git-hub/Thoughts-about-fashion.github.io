@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* font-family: 'Rubik', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+/* <== Heading CSS ==>*/
+header{
+    background-image: linear-gradient(90deg, #2196f37d, #9c27b0a3),url(../images/topHeadBg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.topHead {
+    width: 100vw;
+    background: #373f50;
+    padding: 5px 0px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    overflow: hidden;
+}
+.logoAndName h3 {
+    font-size: 30px;
+    color: #626262;
+}
+.support p{
+    /* font-family: 'Rubik', sans-serif; */
+    color: #bebbbb;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.support i {
+    margin-left: 34px;
+    margin-right: 8px;
+    color: #ff7e00;
+}
+
+.support a {
+    text-decoration: none;
+    color: #dbd9d9;
+    font-size: 14px;
+}
+.openTime p {color: #c5c8ca;margin-right: 75px;font-size: 13px;}
+.socialIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialIcons p {
+    color: #bebbbb;
+    font-size: 13px;
+    margin-right: 12px;
+    font-weight: 400;
+}
+
+.socialIcons i {
+    color: #ff7e00;
+    margin: 0px 4px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoAndName {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.logoAndName img {
+    width: 40px;
+    padding: 10px;
+}
+
+.menuWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* button.productBtn {
+    background: #f87e7f;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 2px;
+    box-shadow: 3px 3px 4px #00000029;
+    color: whitesmoke;
+    transition: 0.3s;
+    cursor: pointer;
+} */
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .menu ul li:nth-child(1){
+    margin-right: 5px;
+    border-right: 1px solid;
+    position: relative;
+} */
+
+.menu ul li a {
+    text-decoration: none;
+    color: #4d4c4c;
+    font-size: 13px;
+    transition: 0.3s;
+    /* padding: 12px 15px; */
+}
+
+.menu ul li {
+    padding: 12px 15px;
+    cursor: pointer;
+}
+.logoAndName h3 {
+    font-size: 30px;
+    color: #626262;
+}
+ul#subMenu {
+    position: fixed;
+    display: flex;
+    background: white;
+    /* box-shadow: 0px 1px 6px #e3dcdc; */
+    border-radius: 2px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 410px;
+    margin-top: 8px;
+    opacity: 0;
+    transform: translateY(20px);
+    transform-origin: top;
+    transition: 0.15s;
+    pointer-events: none;
+}
+
+#subMenuHead{
+    text-decoration: none;
+    color: #4d4c4c;
+    font-size: 13px;
+    transition: 0.3s;
+    padding: 12px 15px;
+    border-right: 2px solid #dddbdb;
+}
+ul#subMenu img {
+    width: 150px;
+    border-radius: 3px;
+}
+ul#subMenu p {
+    font-size: 15px;
+    font-weight: 500;
+}
+li#subMenuHead i {
+    margin-right: 7px;
+}
+.covTxt {
+    width: 30%;
+    overflow: hidden;
+}
+/* <== Hovers ==> */
+/* button.productBtn:hover {
+    background: #fe3638;
+    box-shadow: none;
+} */
+li#subMenuHead:hover #subMenu{
+    opacity: 1;
+    transform: translateY(0px);
+    pointer-events: all;
+}
+
+.menu ul li a:hover{
+    color: orange;
+}
